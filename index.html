@@ -65,6 +65,8 @@
     padding:72px 52px 80px;
     position:relative;
     overflow:hidden;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
   }
   header::before{
     content:'';
@@ -85,12 +87,6 @@
     background-size:60px 60px;
     pointer-events:none;
     mask-image:linear-gradient(180deg, transparent 0%, rgba(0,0,0,.6) 40%, rgba(0,0,0,.6) 70%, transparent 100%);
-  }
-  .header-curve{
-    position:absolute;bottom:-1px;left:0;right:0;height:48px;
-    background:var(--bg);
-    clip-path:ellipse(60% 100% at 50% 100%);
-    z-index:2;
   }
   header .inner{position:relative;z-index:3;max-width:1000px;}
   header .eyebrow{
@@ -513,7 +509,6 @@
       </div>
     </div>
   </div>
-  <div class="header-curve"></div>
 </header>
 
 <div class="nav-wrap">
